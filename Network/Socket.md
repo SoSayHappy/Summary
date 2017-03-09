@@ -1,5 +1,6 @@
 ### 何为Socket
 Socket是应用层与TCP/IP协议族通信的中间软件抽象层，它是一组接口。在设计模式中，Socket其实就是一个**外观模式**，它把复杂的TCP/IP协议族隐藏在Socket接口后面，对用户来说，一组简单的接口就是全部，让Socket去组织数据，以符合指定的协议。
+![Socket使用TCP连接](https://github.com/SoSayHappy/Summary/blob/master/images/network%20mode.jpg)
 
 ### socket的基本操作
 1. 创建，socket() 函数
@@ -11,6 +12,7 @@ Socket是应用层与TCP/IP协议族通信的中间软件抽象层，它是一组接口。在设计模式中，So
 > 服务器需要调用，生成新的Socket对象；客户端等待服务器接受请求；
 5. read()、write()函数等
 6. close()函数
+![Socket使用TCP连接](https://github.com/SoSayHappy/Summary/blob/master/images/socket.jpg)
 
 ### java代码举例
 #### 使用TCP
